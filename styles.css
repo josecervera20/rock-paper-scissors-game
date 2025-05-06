@@ -1,0 +1,103 @@
+/* Reset general de márgenes y paddings */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables de color */
+:root {
+    --very-dark-blue: #0a0a23;
+    --white: #ffffff;
+    --yellow: #f1be32;
+    --golden-yellow: #feac32;
+    --accent-blue: #3f51b5;
+}
+
+/* Estilos base del cuerpo */
+body {
+    background-color: var(--very-dark-blue);
+    text-align: center;
+    color: var(--white);
+}
+
+/* Espaciado del título principal */
+h1 {
+    margin: 15px 0 20px;
+}
+
+/* Botones principales del juego */
+.btn {
+    cursor: pointer;
+    width: 100px;
+    margin: 10px;
+    color: var(--very-dark-blue);
+    background-color: var(--golden-yellow);
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border-color: var(--golden-yellow);
+    border-width: 3px;
+}
+
+/* Efecto hover para botones */
+.btn:hover {
+    background-image: linear-gradient(#ffcc4c, #f89808);
+}
+
+/* Contenedor de reglas del juego */
+.rules-container {
+    padding: 10px 0;
+    margin: auto;
+    border-radius: 15px;
+    border: 5px solid var(--accent-blue);
+    background-color: var(--white);
+    color: var(--very-dark-blue);
+}
+
+/* Elimina viñetas de la lista de reglas */
+.rules-container ul {
+    list-style-type: none;
+}
+
+/* Espaciado entre párrafos de reglas */
+.rules-container p {
+    margin: 10px 0;
+}
+
+/* Ancho del contenedor de reglas en pantallas grandes */
+@media (min-width: 760px) {
+    .rules-container {
+        width: 60%;
+    }
+}
+
+/* Estilos para el marcador */
+.score-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    font-size: 1.2rem;
+}
+
+/* Estilo del valor numérico del marcador */
+.score {
+    font-weight: 500;
+}
+
+/* Contenedor de resultados del juego */
+.results-container {
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+/* Separación del mensaje de ganador */
+#winner-msg {
+    margin-top: 25px;
+}
+
+/* Botón para reiniciar juego, oculto por defecto */
+#reset-game-btn {
+    display: none;
+    margin: 20px auto;
+}
