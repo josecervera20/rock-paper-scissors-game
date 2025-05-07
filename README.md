@@ -12,9 +12,9 @@ Un juego clásico de "Piedra, Papel o Tijeras" creado con **HTML, CSS y JavaScri
 
 ## 🧠 Lógica del Juego
 
-- Piedra vence a Tijeras  
-- Tijeras vencen a Papel  
-- Papel vence a Piedra  
+- Piedra vence a Tijeras
+- Tijeras vencen a Papel
+- Papel vence a Piedra
 - En caso de empate (misma elección), no se otorgan puntos.
 
 ## 📁 Estructura del Proyecto
@@ -27,7 +27,7 @@ rock-paper-scissors/
 ├── script.js         # Lógica y comportamiento del juego
 ├── img/              # Contiene los recursos de imágenes
 │   └── screenshot.png # Captura de pantalla del juego
-└── README.md           
+└── README.md
 ```
 
 ## 🚀 Cómo usar
@@ -44,4 +44,6 @@ rock-paper-scissors/
 
 ## 📸 Vista previa
 
-![Captura del juego](img/screenshot.png)
+<div style="text-align:center;">
+  <img src="img/screenshot.png" alt="Captura del juego">
+</div>
